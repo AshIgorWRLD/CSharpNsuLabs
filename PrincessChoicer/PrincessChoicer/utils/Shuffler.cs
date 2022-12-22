@@ -1,17 +1,15 @@
-using PrincessChoicer.model;
-
 namespace PrincessChoicer.utils;
 
 public static class Shuffler
 {
-    private static Random random = new Random();
+    private static readonly Random Random = new Random();
     
-    public static void shuffle<T>(ref List<T> list)
+    public static void Shuffle<T>(ref List<T> list)
     {
-        int listLength = list.Count;
-        for (int i = listLength - 1; i > 0; i--)
+        var listLength = list.Count;
+        for (var i = listLength - 1; i > 0; i--)
         {
-            int j = random.Next(0, i + 1);
+            var j = Random.Next(0, i + 1);
             (list[i], list[j]) = (list[j], list[i]);
         }
     }

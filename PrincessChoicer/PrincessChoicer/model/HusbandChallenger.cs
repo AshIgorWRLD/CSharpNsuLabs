@@ -1,52 +1,28 @@
+using System.Text;
+
 namespace PrincessChoicer.model;
 
 public class HusbandChallenger
 {
-    private Guid _id;
-    private string _name;
-    private int _rating;
-
-    public string Name
-    {
-        get
-        {
-            return this._name;
-        }
-
-        set
-        {
-            this._name = value;
-        }
-    }
-    public Guid Id
-    {
-        get
-        {
-            return this._id;
-        }
-        set
-        {
-            this._id = Guid.NewGuid();
-        }
-    }
-
-    public int Rating
-    {
-        get
-        {
-            return this._rating;
-        }
-
-        set
-        {
-            this._rating = value;
-        }
-    }
+    public Guid Id { get; }
+    public string Name { get; }
+    public int Rating { get; }
 
     public HusbandChallenger(string name, int rating)
     {
-        this._id = Guid.NewGuid();
-        this._name = name;
-        this._rating = rating;
+        Id = Guid.NewGuid();
+        Name = name;
+        Rating = rating;
+    }
+
+    public void PrintInfo()
+    {
+        var stringBuilder = new StringBuilder();
+        stringBuilder.Append(Id)
+            .Append(": ")
+            .Append(Name)
+            .Append(' ')
+            .Append(Rating);
+        Console.WriteLine(stringBuilder);
     }
 }

@@ -2,17 +2,22 @@ namespace PrincessChoicer.model;
 
 public class Friend
 {
-    private List<HusbandChallenger> _princessChallengerList;
+    private int _maxRating;
 
-    public Friend(List<HusbandChallenger> challengerList)
+    public Friend()
     {
-        this._princessChallengerList = new List<HusbandChallenger>();
+        _maxRating = 0;
     }
 
-    public bool getRecommendation(HusbandChallenger challenger)
+    public bool IsBetter(HusbandChallenger challenger)
     {
-        challenger.
+        return challenger.Rating > _maxRating;
     }
     
-    
+    public void AddNewChallenger(HusbandChallenger challenger){
+        if (IsBetter(challenger))
+        {
+            _maxRating = challenger.Rating;
+        }
+    }
 }
