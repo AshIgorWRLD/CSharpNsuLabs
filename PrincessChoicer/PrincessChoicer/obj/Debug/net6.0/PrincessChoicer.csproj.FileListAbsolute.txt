@@ -1,0 +1,15 @@
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\bin\Debug\net6.0\PrincessChoicer.exe
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\bin\Debug\net6.0\PrincessChoicer.deps.json
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\bin\Debug\net6.0\PrincessChoicer.runtimeconfig.json
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\bin\Debug\net6.0\PrincessChoicer.dll
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\bin\Debug\net6.0\ref\PrincessChoicer.dll
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\bin\Debug\net6.0\PrincessChoicer.pdb
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.csproj.AssemblyReference.cache
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.AssemblyInfoInputs.cache
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.AssemblyInfo.cs
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.csproj.CoreCompileInputs.cache
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.dll
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\ref\PrincessChoicer.dll
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.pdb
+C:\Users\imami\GitHubResume\CSharpNsuLabs\PrincessChoicer\PrincessChoicer\obj\Debug\net6.0\PrincessChoicer.genruntimeconfig.cache
