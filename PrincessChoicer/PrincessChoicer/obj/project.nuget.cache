@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "mutCdvsJvG1EfEN/wMnb921UnubF84BOhfeohBtIGzBwA2fp/g4mb9tZhYTIt9Hznf6rxF0MXT9fVn6lqvNVxQ==",
+  "dgSpecHash": "WSWArsgJtSlShxR3G2OhKGEeLeXhb/CDsDMawYtlIOmjjPYzi+xrlyvH9s0rG6dTp2xTKGjNfjybwtgizwdC9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\7.0.0\\microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
