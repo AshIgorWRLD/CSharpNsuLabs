@@ -2,18 +2,31 @@ namespace PrincessChoicer.model;
 
 public class HusbandChallenger
 {
-    private Guid id;
-    private int rating;
+    private Guid _id;
+    private string _name;
+    private int _rating;
 
+    public string Name
+    {
+        get
+        {
+            return this._name;
+        }
+
+        set
+        {
+            this._name = value;
+        }
+    }
     public Guid Id
     {
         get
         {
-            return this.id;
+            return this._id;
         }
         set
         {
-            this.id = Guid.NewGuid();
+            this._id = Guid.NewGuid();
         }
     }
 
@@ -21,18 +34,19 @@ public class HusbandChallenger
     {
         get
         {
-            return this.rating;
+            return this._rating;
         }
 
         set
         {
-            this.rating = value;
+            this._rating = value;
         }
     }
 
-    public HusbandChallenger(int rating)
+    public HusbandChallenger(string name, int rating)
     {
-        this.id = Guid.NewGuid();
-        this.rating = rating;
+        this._id = Guid.NewGuid();
+        this._name = name;
+        this._rating = rating;
     }
 }

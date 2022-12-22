@@ -4,42 +4,55 @@ namespace PrincessChoicer.model;
 
 public class Hall
 {
-    private List<HusbandChallenger> challengerList;
+    private List<HusbandChallenger> _challengerList;
+    private string namesFilePath = "C:/Users/Igor/GitHubResume/CSharpNsuLabs/PrincessChoicer/PrincessChoicer/model/names.txt";
 
     public Hall()
     {
-        this.challengerList = getChallengers();
-        for (int i = 0; i < challengerList.Capacity; i++)
+        this._challengerList = getChallengers();
+        for (var i = 0; i < _challengerList.Capacity; i++)
         {
-            String str = challengerList[i].Id.ToString() + ": " + challengerList[i].Rating;
+            var str = _challengerList[i].Id.ToString() + ": " + _challengerList[i].Name + " " 
+                + _challengerList[i].Rating;
             Console.WriteLine(str);
         }
     }
     
     public Hall(List<HusbandChallenger> challengerList)
     {
-        this.challengerList = challengerList;
+        this._challengerList = challengerList;
     }
 
     private List<HusbandChallenger> getChallengers()
     {
         var ratings = generateRatings();
         var challengers = new List<HusbandChallenger>();
-        for (int i = 0; i < 100; i++)
+        var names = generateNames();
         {
-            challengers.Add(new HusbandChallenger(ratings[i]));
+            for (var i = 0; i < 100; i++)
+            {
+                challengers.Add(new HusbandChallenger(names[i], ratings[i]));
+            }
         }
+
         return challengers;
     }
 
     private List<int> generateRatings()
     {
         var ratings = new List<int>();
-        for(int i = 0; i < 100; i++){
+        for(var i = 0; i < 100; i++){
             ratings.Add(i + 1);
         }
         Shuffler.shuffle(ref ratings);
         return ratings;
     }
-    
+
+    private List<string> generateNames()
+    {
+        var namesArray = File.ReadAllLines(namesFilePath);
+        var names = new List<string>(namesArray);
+        Shuffler.shuffle(ref names);
+        return names;
+    }
 } 

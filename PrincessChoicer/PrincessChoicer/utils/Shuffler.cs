@@ -15,9 +15,4 @@ public static class Shuffler
             (list[i], list[j]) = (list[j], list[i]);
         }
     }
-
-    private static void swap<T>(ref List<T> list, int a, int b)
-    {
-        (list[a], list[b]) = (list[b], list[a]);
-    }
 }

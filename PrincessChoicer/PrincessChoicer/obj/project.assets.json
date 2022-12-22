@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\imami\\.nuget\\packages\\": {}
+    "C:\\Users\\Igor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
+      "projectUniqueName": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
       "projectName": "PrincessChoicer",
-      "projectPath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
-      "packagesPath": "C:\\Users\\imami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\obj\\",
+      "projectPath": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
+      "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\imami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.112\\RuntimeIdentifierGraph.json"
       }
     }
   }
