@@ -1,23 +1,27 @@
 using System.Text;
-using PrincessChoicer.utils;
+using PrincessChoicer.common.utils;
 
-namespace PrincessChoicer.model;
+namespace PrincessChoicer.common.model.impl;
 
-public class Princess
+public class PrincessImpl : IPrincess
 {
-    private readonly Friend _friend;
-    private readonly Hall _hall;
+    private readonly IFriend _friend;
+    private readonly IHall _hall;
+    private StringBuilder _cameChallengersStringBuilder;
 
-    public Princess(Friend friend, Hall hall)
+    public PrincessImpl(IFriend friend, IHall hall)
     {
         _friend = friend;
         _hall = hall;
+        _cameChallengersStringBuilder = new StringBuilder();
     }
 
-    public void TellWhoIsHusband()
+    public string TellWhoIsHusband()
     {
         var husbandChallenger = Choose();
-        TellWhoWasChosen(husbandChallenger);
+        var result = TellWhoWasChosen(husbandChallenger);
+        _cameChallengersStringBuilder.Append(result);
+        return _cameChallengersStringBuilder.ToString();
     }
     
     private HusbandChallenger? Choose()
@@ -52,29 +56,31 @@ public class Princess
         return Convert.ToInt32(Math.Round(challengerAmount/Math.E));
     }
 
-    private static void TellWhoComeIn(int iteration, HusbandChallenger challenger)
+    private void TellWhoComeIn(int iteration, HusbandChallenger challenger)
     {
         var stringBuilder = new StringBuilder();
         stringBuilder.Append(iteration)
             .Append(") ")
             .Append(challenger.Name);
-        Console.WriteLine(stringBuilder);
+        _cameChallengersStringBuilder
+            .Append(stringBuilder)
+            .Append('\n');
     }
 
-    private static void TellWhoWasChosen(HusbandChallenger? challenger)
+    private static string TellWhoWasChosen(HusbandChallenger? challenger)
     {
-        Console.WriteLine(Constants.Delimiter);
         if (challenger == null)
         {
-            Console.WriteLine("No one");
-            return;
+            return "No one";
         }
 
         var stringBuilder = new StringBuilder();
-        stringBuilder.Append(challenger.Name)
-            .Append(": ")
+        stringBuilder.Append(Constants.Delimiter)
+            .Append('\n')
+            .Append("Chosen: ")
+            .Append(challenger.Name)
+            .Append(" - ")
             .Append(challenger.Rating);
-        
-        Console.WriteLine(stringBuilder);
+        return stringBuilder.ToString();
     }
 }

@@ -1,4 +1,4 @@
-namespace PrincessChoicer.utils;
+namespace PrincessChoicer.common.utils;
 
 public static class Constants
 {

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace PrincessChoicer.model;
+namespace PrincessChoicer.common.model;
 
 public class HusbandChallenger
 {
@@ -15,7 +15,16 @@ public class HusbandChallenger
         Rating = rating;
     }
 
-    public void PrintInfo()
+    public string GetInfo()
+    {
+        var stringBuilder = new StringBuilder();
+        stringBuilder.Append(Name)
+            .Append(" - ")
+            .Append(Rating);
+        return stringBuilder.ToString();
+    }
+
+    public string GetInfoWithId()
     {
         var stringBuilder = new StringBuilder();
         stringBuilder.Append(Id)
@@ -23,6 +32,6 @@ public class HusbandChallenger
             .Append(Name)
             .Append(' ')
             .Append(Rating);
-        Console.WriteLine(stringBuilder);
+        return stringBuilder.ToString();
     }
 }

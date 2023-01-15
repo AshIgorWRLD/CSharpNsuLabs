@@ -1,10 +1,10 @@
-namespace PrincessChoicer.model;
+namespace PrincessChoicer.common.model.impl;
 
-public class Friend
+public class FriendImpl : IFriend
 {
     private int _maxRating;
 
-    public Friend()
+    public FriendImpl()
     {
         _maxRating = 0;
     }
