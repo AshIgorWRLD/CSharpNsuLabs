@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "nsHgIolciBpBRHTTUbB1PZSgfeUOuHeWg16fdswl2q6iw/7D14wRm7TRQ8fqcbn7N4lecaTtPn+9qmb6VQaUGg==",
+  "dgSpecHash": "WuG7T3XoS5ticJbI6gCA8fCUlQtHtY41BjQoqCwIrUGCZJ6lcwTl8O7Zv6+lpUzn1/53+h/H34LVtxTOgvCA/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.2\\microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",

@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "VOXqEP/C3/k6jQp58LIScRu39yevntNULc3v+59HTLkV/08gSSw/3ahtN0VauznyaRC+2gRKnvFMdbTnfuOzvQ==",
+  "dgSpecHash": "GC0I5f0Zr03u1znOSfqLAT8uqHpDEVI9aKKuDO4WkqFBxvo3Sm2ZAB1ZmZ/GAvwbbn7FEW+eSzwK+11wQKpCWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\imami\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.2\\microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\imami\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
