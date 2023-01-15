@@ -47,7 +47,7 @@ public class ContentGeneratorImpl : IContentGenerator
         else
         {
             Console.WriteLine($"There is problem while getting fullNames from Net: {fullNamesResponse.StatusCode}");
-            throw new NamesGettingException(ErrorType.RandomFullNameNetError());
+            throw new CustomException(ErrorType.RandomFullNameNetError());
         }
 
         return names;
@@ -63,7 +63,7 @@ public class ContentGeneratorImpl : IContentGenerator
 
         if (names == null)
         {
-            throw new NamesGettingException(ErrorType.RandomFullNameNetError());
+            throw new CustomException(ErrorType.RandomFullNameNetError());
         }
 
         return names;

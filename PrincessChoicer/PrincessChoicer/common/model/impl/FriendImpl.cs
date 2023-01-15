@@ -1,3 +1,5 @@
+using PrincessChoicer.common.exception;
+
 namespace PrincessChoicer.common.model.impl;
 
 public class FriendImpl : IFriend
@@ -11,6 +13,10 @@ public class FriendImpl : IFriend
 
     public bool IsBetter(HusbandChallenger challenger)
     {
+        if (!challenger.MetWithPrincess)
+        {
+            throw new CustomException(ErrorType.UnfamiliarChallenger());
+        }
         return challenger.Rating > _maxRating;
     }
     

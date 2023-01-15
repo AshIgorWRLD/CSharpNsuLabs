@@ -7,12 +7,14 @@ public class HusbandChallenger
     public Guid Id { get; }
     public string Name { get; }
     public int Rating { get; }
+    public bool MetWithPrincess { get; set; }
 
     public HusbandChallenger(string name, int rating)
     {
         Id = Guid.NewGuid();
         Name = name;
         Rating = rating;
+        MetWithPrincess = false;
     }
 
     public string GetInfo()

@@ -1,4 +1,5 @@
 using System.Text;
+using PrincessChoicer.common.exception;
 using PrincessChoicer.common.utils;
 
 namespace PrincessChoicer.common.model.impl;
@@ -7,13 +8,18 @@ public class PrincessImpl : IPrincess
 {
     private readonly IFriend _friend;
     private readonly IHall _hall;
-    private StringBuilder _cameChallengersStringBuilder;
+    private readonly StringBuilder _cameChallengersStringBuilder;
 
     public PrincessImpl(IFriend friend, IHall hall)
     {
         _friend = friend;
         _hall = hall;
         _cameChallengersStringBuilder = new StringBuilder();
+    }
+
+    public void UpdateHall(List<HusbandChallenger> challengers)
+    {
+        _hall.SetChallengerList(challengers);
     }
 
     public string TellWhoIsHusband()
@@ -24,22 +30,26 @@ public class PrincessImpl : IPrincess
         return _cameChallengersStringBuilder.ToString();
     }
     
-    private HusbandChallenger? Choose()
+    public HusbandChallenger? Choose()
     {
         var challengersAmount = _hall.GetChallengerAmount();
+        if (challengersAmount == 0)
+        {
+            throw new CustomException(ErrorType.HallIsEmpty());
+        }
         var passChallengersAmount = GetPassChallengersAmount(challengersAmount);
         var currentChallengerNumber = 1;
         while (currentChallengerNumber <= challengersAmount)
         {
             var nextChallenger = _hall.GetNextChallenger();
             TellWhoComeIn(currentChallengerNumber, nextChallenger);
+            nextChallenger.MetWithPrincess = true;
             if (currentChallengerNumber <= passChallengersAmount)
             {
                 _friend.AddNewChallenger(nextChallenger);
                 currentChallengerNumber++;
                 continue;
             }
-
             if (_friend.IsBetter(nextChallenger))
             {
                 return nextChallenger;
@@ -51,7 +61,7 @@ public class PrincessImpl : IPrincess
         return null;
     }
 
-    private static int GetPassChallengersAmount(int challengerAmount)
+    public int GetPassChallengersAmount(int challengerAmount)
     {
         return Convert.ToInt32(Math.Round(challengerAmount/Math.E));
     }

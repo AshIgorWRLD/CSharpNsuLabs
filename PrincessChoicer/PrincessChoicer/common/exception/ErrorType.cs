@@ -2,36 +2,35 @@ namespace PrincessChoicer.common.exception;
 
 public class ErrorType
 {
-    public ErrorCode ErrorCode { get; }
-    public string Message { get; }
+    private ErrorCode _errorCode;
+    private string _errorMessage;
 
-    private ErrorType(ErrorCode errorCode, string message)
+    private ErrorType(ErrorCode errorCode, string errorMessage)
     {
-        ErrorCode = errorCode;
-        Message = message;
+        _errorCode = errorCode;
+        _errorMessage = errorMessage;
     }
 
     public static ErrorType HallIsEmpty()
     {
         return new ErrorType(ErrorCode.HallIsEmpty,
-            "There is no contenders in the hall");
+            "No more challengers in the hall");
     }
 
-    public static ErrorType UnfamiliarContender()
+    public static ErrorType UnfamiliarChallenger()
     {
-        return new ErrorType(ErrorCode.NotFamiliarWithPrincess,
-            "Contender(s) isn(aren)'t familiar with princess yet");
-    }
-
-    public static ErrorType InvalidContender()
-    {
-        return new ErrorType(ErrorCode.InvalidContender,
-            "Contender(s) is(are) invalid");
+        return new ErrorType(ErrorCode.NotFamiliarChallenger,
+            "Not familiar with princess");
     }
 
     public static ErrorType RandomFullNameNetError()
     {
         return new ErrorType(ErrorCode.RandomFullNamesNetError,
             "There are problems with getting random fullNames from Net");
+    }
+
+    public string GetErrorMessage()
+    {
+        return $"{_errorCode}: {_errorMessage}";
     }
 }
