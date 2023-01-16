@@ -13,18 +13,20 @@ public class SearchSimulationServiceImpl : ISearchSimulationService
     private readonly IPrincess _princess;
     private readonly IContentGenerator _contentGenerator;
     private readonly ILogger<SearchSimulationServiceImpl> _logger;
+    private readonly IConfiguration _configuration;
 
-    private readonly List<HusbandChallenger> _visitedChallengers;
+    private List<HusbandChallenger> _visitedChallengers;
 
 
     public SearchSimulationServiceImpl(ISearchTryService searchTryService, IHall hall, IPrincess princess,
-        IContentGenerator contentGenerator, ILogger<SearchSimulationServiceImpl> logger)
+        IContentGenerator contentGenerator,IConfiguration configuration, ILogger<SearchSimulationServiceImpl> logger)
     {
         _searchTryService = searchTryService;
         _hall = hall;
         _princess = princess;
         _contentGenerator = contentGenerator;
         _logger = logger;
+        _configuration = configuration;
         
         _visitedChallengers = new List<HusbandChallenger>();
     }
@@ -44,7 +46,7 @@ public class SearchSimulationServiceImpl : ISearchSimulationService
             InitHall(CallType.Update, new SearchTry());
 
             var chosenVariant = _princess.Choose();
-            var happinessLevel = convertToHappinessLvl(chosenVariant);
+            var happinessLevel = ConvertToHappinessLvl(chosenVariant);
             
             _searchTryService
                 .SaveSearchTry($"Try[{i}]", _visitedChallengers, happinessLevel);
@@ -64,7 +66,7 @@ public class SearchSimulationServiceImpl : ISearchSimulationService
 
         InitHall(CallType.Recall, searchTry);
         var chosenVariant = _princess.Choose();
-        var happinessLevel = convertToHappinessLvl(chosenVariant);
+        var happinessLevel = ConvertToHappinessLvl(chosenVariant);
 
         if (toPrint)
         {
@@ -85,31 +87,36 @@ public class SearchSimulationServiceImpl : ISearchSimulationService
 
         return averageValue;
     }
-    
+
+    public List<SearchTry> GetCurrentSearchStatus()
+    {
+        return _searchTryService.GetAllSearchTries();
+    }
+
     private void InitHall(CallType callType, SearchTry searchTry)
     {
         if (callType == CallType.Update)
         {
             var challengerList = _contentGenerator.GenerateChallengerList();
+            _visitedChallengers = challengerList;
             _hall.SetChallengerList(challengerList);
         }
-        else if (callType == CallType.Recall && searchTry.Challengers != null)
+        else if (callType == CallType.Recall)
         {
             var challengerList = searchTry.Challengers
                 .Select(ce => new HusbandChallenger(ce.Name, ce.Rating))
                 .ToList();
+            _visitedChallengers = challengerList;
             _hall.SetChallengerList(challengerList);
         }
     }
     
     private void RefreshChallengerList()
     {
-        _hall.Clear();
-        _visitedChallengers.Clear();
         _princess.FriendRefresh();
     }
 
-    private int convertToHappinessLvl(HusbandChallenger? husbandChallenger)
+    private static int ConvertToHappinessLvl(HusbandChallenger? husbandChallenger)
     {
         if (husbandChallenger == null)
         {
@@ -136,7 +143,7 @@ public class SearchSimulationServiceImpl : ISearchSimulationService
         file.WriteLineAsync($"Choice result: {choiceResult}");
     }
     
-    private void PrintAverageValue(double averageValue)
+    private static void PrintAverageValue(double averageValue)
     {
         using StreamWriter file = new($"averageValue.txt");
         file.WriteLineAsync($"Average value: {averageValue}");

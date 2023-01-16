@@ -17,7 +17,7 @@ public class HallImpl : IHall
     {
         _challengerList = challengerList;
         _husbandAmount = _challengerList.Count;
-        PrintAllChallengers();
+        _husbandNumber = 0;
     }
 
     public HusbandChallenger GetNextChallenger()
@@ -37,15 +37,10 @@ public class HallImpl : IHall
 
     public void Clear()
     {
-        _challengerList.Clear();
-    }
-
-    private void PrintAllChallengers()
-    {
-        using StreamWriter file = new("challengers.txt");
-        for (int i = 0; i < _challengerList.Count; i++)
+        if (_challengerList == null)
         {
-            file.WriteLineAsync($"{i + 1}: {_challengerList[i].GetInfoWithId()}");
+            return;
         }
+        _challengerList.Clear();
     }
 } 
