@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj": {}
+    "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj": {
+    "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj",
+        "projectUniqueName": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj",
         "projectName": "PrincessChoicerTest",
-        "projectPath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj",
-        "packagesPath": "C:\\Users\\imami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\obj\\",
+        "projectPath": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\PrincessChoicerTest.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicerTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\imami\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj": {
-                "projectPath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj"
+              "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj": {
+                "projectPath": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj"
               }
             }
           }
@@ -64,6 +62,10 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -84,28 +86,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj": {
+    "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
+        "projectUniqueName": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
         "projectName": "PrincessChoicer",
-        "projectPath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
-        "packagesPath": "C:\\Users\\imami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\imami\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\obj\\",
+        "projectPath": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\PrincessChoicer.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Igor\\GitHubResume\\CSharpNsuLabs\\PrincessChoicer\\PrincessChoicer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\imami\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -139,6 +139,14 @@
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -156,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
         }
       }
     }

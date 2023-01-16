@@ -5,7 +5,7 @@ namespace PrincessChoicer.lab4.service;
 
 public interface ISearchTryService
 {
-    SearchTry? GetSearchLoveTryByName(string name);
+    SearchTry? GetSearchTryByName(string name);
     void SaveSearchTry(string tryName, List<HusbandChallenger> challengers, int searchResult);
     void DeleteAllSearchTries();
     double GetAllSearchTriesAverageValue();

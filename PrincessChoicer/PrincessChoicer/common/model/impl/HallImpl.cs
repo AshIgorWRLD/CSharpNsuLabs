@@ -35,6 +35,11 @@ public class HallImpl : IHall
         return _challengerList.Count;
     }
 
+    public void Clear()
+    {
+        _challengerList.Clear();
+    }
+
     private void PrintAllChallengers()
     {
         using StreamWriter file = new("challengers.txt");

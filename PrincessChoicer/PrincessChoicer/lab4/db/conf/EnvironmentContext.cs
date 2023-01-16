@@ -16,10 +16,10 @@ public sealed class EnvironmentContext : DbContext
     {
         modelBuilder.Entity<SearchTry>()
             .HasMany(searchTry => searchTry.Challengers)
-            .WithOne(contender => contender.SearchTry);
+            .WithOne(challenger => challenger.SearchTry);
 
         modelBuilder.Entity<SearchTry>()
-            .HasIndex(searchLoveTry => searchLoveTry.Name)
+            .HasIndex(searchTry => searchTry.Name)
             .IsUnique();
     }
 }
