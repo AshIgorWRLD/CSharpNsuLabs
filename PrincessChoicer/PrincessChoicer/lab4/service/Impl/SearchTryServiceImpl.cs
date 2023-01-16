@@ -13,7 +13,7 @@ public class SearchTryServiceImpl : ISearchTryService
         _searchTryRepo = searchTryRepo;
     }
     
-    public SearchTry? GetSearchLoveTryByName(string name)
+    public SearchTry? GetSearchTryByName(string name)
     {
         return _searchTryRepo.GetSearchTryByName(name);
     }

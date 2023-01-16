@@ -11,6 +11,11 @@ public class FriendImpl : IFriend
         _maxRating = 0;
     }
 
+    public void Refresh()
+    {
+        _maxRating = 0;
+    }
+
     public bool IsBetter(HusbandChallenger challenger)
     {
         if (!challenger.MetWithPrincess)

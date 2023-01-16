@@ -17,6 +17,11 @@ public class PrincessImpl : IPrincess
         _cameChallengersStringBuilder = new StringBuilder();
     }
 
+    public void FriendRefresh()
+    {
+        _friend.Refresh();
+    }
+
     public void UpdateHall(List<HusbandChallenger> challengers)
     {
         _hall.SetChallengerList(challengers);

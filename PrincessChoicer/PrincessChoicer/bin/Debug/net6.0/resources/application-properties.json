@@ -1,0 +1,10 @@
+{
+  "ConnectionStrings": {
+    "EnvironmentDatabase" : "host=localhost;port=5432;database=princess-choicer;username=postgres;password=123"
+  },
+  "SearchParams": {
+    "CallType": "Avg",
+    "SearchTries" : 100,
+    "DefaultStartChallengersNumber" : 100
+  }
+}
